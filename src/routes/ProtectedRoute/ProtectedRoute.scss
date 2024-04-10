@@ -1,0 +1,63 @@
+.search-input {
+    .ant-input[placeholder]::placeholder {
+        color: white;
+        opacity: 0.4;
+        padding-left: 10px;
+    }
+}
+.ant-input-filled:focus-within {
+    background-color: black;
+    border-color: black;
+}
+
+.sider_container {
+}
+#show-sidebar-btn {
+    display: none;
+}
+
+.ant-btn-default:not(:disabled):not(.ant-btn-disabled):active {
+    border-color: #1b2635;
+    background-color: inherit;
+}
+:where(.css-dev-only-do-not-override-srkg05).ant-btn-default:not(:disabled):not(
+        .ant-btn-disabled
+    ):hover {
+    color: inherit;
+    border-color: #1b2635;
+    background: inherit;
+}
+
+.ant-popover .ant-popover-inner {
+    background-color: #233044;
+    background-clip: padding-box;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+        0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    padding: 12px;
+}
+
+:where(.css-dev-only-do-not-override-srkg05).ant-drawer .ant-drawer-mask {
+    position: absolute;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.45);
+    pointer-events: auto;
+}
+
+@media only screen and (max-width: 769px) {
+    #sider_container {
+        display: none;
+    }
+    #show-sidebar-btn {
+        display: inline-block;
+    }
+    .search-input {
+        display: none;
+    }
+}
+@media only screen and (max-width: 321px) {
+    .ant-layout-header {
+        padding: 0;
+    }
+}

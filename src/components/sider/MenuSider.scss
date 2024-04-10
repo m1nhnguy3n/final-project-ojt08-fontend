@@ -1,0 +1,39 @@
+.ant-menu-dark .ant-menu-item-selected {
+    background-color: black;
+    margin: 0;
+    border-radius: 0%;
+}
+.ant-space-gap-row-small {
+    row-gap: 0px;
+}
+.ant-badge.ant-badge .ant-badge-color-green:not(.ant-badge-count) {
+    color: #52c41a;
+    width: 10px;
+    height: 10px;
+}
+
+.ant-menu-light .ant-menu-item-selected {
+    color: #00a76f;
+    background-color: #d6f1e8;
+}
+// .ant-menu-light .ant-menu-item {
+//     color: rgb(99, 115, 129);
+// }
+
+.ant-btn-default {
+    border: none;
+}
+
+.ant-layout .ant-layout-sider {
+    background-color: white;
+}
+
+.ant-menu-light.ant-menu-item-selected :hover {
+    // background-color: #00a76f14;
+    background-color: #ffffff14;
+
+}
+
+.ant-menu-item .ant-menu-light :hover {
+    background-color: #E5E7E8;
+}
