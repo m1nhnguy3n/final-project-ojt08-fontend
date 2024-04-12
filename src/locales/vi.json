@@ -18,14 +18,15 @@
         "STATUS": "Trạng thái",
         "PENDING": "Đang chờ",
         "INPROGRESS": "Đang tiến hành",
-        "COMPLETE": "Hoàn thành"
+        "COMPLETE": "Hoàn thành",
+        "PAGE": "Trang",
+        "TOTAL": "Total: {{total}} project"
     },
     "PROJECT":{
         "LISTPROJECT" : "Danh sách dự án",
         "CREATE" : "Tạo dự án",
         "DASHBOARD": "Bảng điều khiển",
         "PROJECT": "Dự án",
-        "LISTPROJECT": "Danh sách dự án",
         "MANAGER": "Nhập tên quản lý",
         "PROJECTNAME": "Nhập tên dự án",
         "STATUS": "Nhập trạng thái",

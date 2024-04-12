@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Table, Input, Button, Select, Row, Col, DatePicker, Typography, Breadcrumb, Divider, Tooltip, Pagination } from 'antd';
 import { PlusOutlined, DeleteOutlined, EyeOutlined, FieldTimeOutlined } from '@ant-design/icons';
@@ -14,43 +14,35 @@ function ProjectList() {
   const { RangePicker } = DatePicker;
   const dispatch = useDispatch();
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageSize, setPageSize] = useState(10);
+
+
   const { projects } = useSelector((state) => state.project);
+
 
 
   useEffect(() => {
     dispatch(getProjects());
   }, [dispatch])
 
-  const columns = [
-    {
-      title: t('TABLE.ACTIONS'),
-      key: 'actions',
-      render: (record) => (
-        <span>
-          <Tooltip title={t('TABLE.DELETE')}>
-            <Button
-              type="link"
-              icon={<DeleteOutlined style={{ color: 'red' }} />}
-              onClick={() => handleDelete(record.id)}
-            />
-          </Tooltip>
-          <Tooltip title={t('TABLE.VIEW')}>
-            <Button
-              type="link"
-              icon={<EyeOutlined />}
-              onClick={() => handleView(record.id)}
-            />
-          </Tooltip>
-          <Tooltip title={t('TABLE.HISTORY')}>
-            <Button
-              type="text"
-              icon={<FieldTimeOutlined />}
-              onClick={() => showDrawer(record)}
-            />
-          </Tooltip>
-        </span>
-      ),
+  const paginationOptions = {
+    total: projects.filter((item) => !item.deletedAt).length,
+    current: currentPage,
+    pageSize: pageSize,
+    showSizeChanger: true,
+    showTotal: (total) => t('TABLE.TOTAL', { total }),
+    className: 'my-3',
+    onChange: (page, pageSize) => {
+      setCurrentPage(page);
+      setPageSize(pageSize);
     },
+    locale: {
+      items_per_page: `/ ${t('TABLE.PAGE')}`,
+    },
+  };
+  const columns = [
+
     {
       title: t('TABLE.NO.'),
       dataIndex: 'id',
@@ -113,6 +105,35 @@ function ProjectList() {
                 : t('TABLE.COMPLETE')}
           </span>
         </Tooltip>
+      ),
+    },
+    {
+      title: t('TABLE.ACTIONS'),
+      key: 'actions',
+      render: (record) => (
+        <span>
+          <Tooltip title={t('TABLE.DELETE')}>
+            <Button
+              type="link"
+              icon={<DeleteOutlined style={{ color: 'red' }} />}
+              onClick={() => handleDelete(record.id)}
+            />
+          </Tooltip>
+          <Tooltip title={t('TABLE.VIEW')}>
+            <Button
+              type="link"
+              icon={<EyeOutlined />}
+              onClick={() => handleView(record.id)}
+            />
+          </Tooltip>
+          <Tooltip title={t('TABLE.HISTORY')}>
+            <Button
+              type="text"
+              icon={<FieldTimeOutlined />}
+              onClick={() => showDrawer(record)}
+            />
+          </Tooltip>
+        </span>
       ),
     },
   ];
@@ -213,17 +234,16 @@ function ProjectList() {
           </Button>
         </Col>
       </Row>
-      <Table className='overflow-y-auto h-[350px]' dataSource={projects} columns={columns} scroll={{ x: 'max-content' }} style={{ marginBottom: '19px' }} />
-      <Row justify="space-between" align="flex">
-        <Col>
-          <span style={{ fontWeight: 'bold', fontSize: '15px' }}>
-            {t('PROJECT.TOTAL')}: {projects.length}
-          </span>
-        </Col>
+      <Table className='overflow-y-auto h-[350px]' dataSource={projects.length > 0
+        ? projects.slice(
+          (currentPage - 1) * pageSize,
+          currentPage * pageSize,
+        )
+        : []} columns={columns} scroll={{ x: 'max-content', y: '260px' }} style={{ marginBottom: '19px' }} />
+      <Row justify="end" align="flex">
         <Col>
           <Pagination
-            defaultCurrent={1}
-            total={projects.length}
+            {...paginationOptions}
           />
         </Col>
       </Row>

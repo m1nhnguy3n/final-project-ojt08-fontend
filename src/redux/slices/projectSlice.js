@@ -48,7 +48,10 @@ export function getProjects() {
         dispatch(slice.actions.startLoading());
         try {
             const response = await getAllProjectsApi();
-            dispatch(slice.actions.getProjectsSuccess(response.data));
+
+            const data = response.data.filter((item) => !item.deletedAt)
+
+            dispatch(slice.actions.getProjectsSuccess(data));
         } catch (error) {
             dispatch(slice.actions.hasError(error));
         }
