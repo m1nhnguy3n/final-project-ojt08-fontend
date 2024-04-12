@@ -60,7 +60,7 @@ const ProtectedRoute = () => {
                     <Header
                         id='header-container'
                         className='
-                            h-[100px] bg-inherit w-full flex sticky top-0 z-10'>
+                           bg-inherit w-full flex sticky top-0 z-10'>
                         <Row className='w-full' justify='space-between'>
                             <Col span={8} className='flex items-center'>
                                 <Button
