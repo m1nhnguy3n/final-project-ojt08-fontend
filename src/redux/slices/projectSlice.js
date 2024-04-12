@@ -1,4 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { getAllEmployeeApi } from '../../apis/employee';
+import { dispatch } from '../store';
+import { getAllProjectsApi } from '../../apis/project';
 
 
 const initialState = {
@@ -39,3 +42,15 @@ const slice = createSlice({
 export default slice.reducer;
 
 export const { getProjectSuccess, getProjectsSuccess } = slice.actions;
+
+export function getProjects() {
+    return async () => {
+        dispatch(slice.actions.startLoading());
+        try {
+            const response = await getAllProjectsApi();
+            dispatch(slice.actions.getProjectsSuccess(response.data));
+        } catch (error) {
+            dispatch(slice.actions.hasError(error));
+        }
+    };
+}

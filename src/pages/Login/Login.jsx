@@ -8,14 +8,14 @@ const Login = () => {
 
     const { loginWithGoogle } = useAuth();
 
-    const { getItem } = useLocalStorage;
+    const { getItem } = useLocalStorage();
 
     const handleLogin = async () => {
         await loginWithGoogle();
         const accessToken = getItem('accessToken');
 
         if (accessToken) {
-            navigate('');
+            navigate('/');
         }
     };
     return (

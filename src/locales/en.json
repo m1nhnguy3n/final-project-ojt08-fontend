@@ -37,5 +37,34 @@
         "TABLE3_TEXT6": "Help center access",
         "TABLE3_TEXT7": "Phone & email support",
         "TABLE3_TEXT8": "Contact Us"
+    },
+    "TABLE": {
+        "ACTIONS": "Actions",
+        "DELETE": "Delete",
+        "VIEW" : "View",
+        "HISTORY" : "History",
+        "NO." : "No.",
+        "MANAGER" : "Manager",
+        "PROJECTS" : "Projects",
+        "STARTDAY" : "Start Day",
+        "ENDDAY" : "End Day",
+        "STATUS" : "Status",
+        "PENDING" : "Pending",
+        "INPROGRESS" : "In progress",
+        "COMPLETE" : "Complete"
+    },
+    "PROJECT":{
+        "LISTPROJECT" : "List Project",
+        "CREATE" : "Create Project",
+        "DASHBOARD" : "Dashboard",
+        "PROJECT" : "Project",
+        "LISTPROJECT" : "List Project",
+        "MANAGER" : "Enter Manager",
+        "PROJECTNAME" : "Enter Project Name",
+        "STATUS" : "Enter Status",
+        "SEARCH" : "Search",
+        "TOTAL" : "Total Project"
+
     }
+
 }
