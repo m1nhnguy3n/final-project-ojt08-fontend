@@ -132,11 +132,11 @@ const Login = () => {
                 />
               </Form.Item>
               <Form.Item className="grid justify-items-center pt-2 w-full">
-                <Col span={24} >
+                <Col span={24} lg={18} md={18}>
                   <Button
                     type="primary"
                     htmlType="submit"
-                    className="btn-login w-[385px]"
+                    className="btn-login btn-submit"
                   >
                     Log in
                   </Button>
