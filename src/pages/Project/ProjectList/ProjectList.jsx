@@ -137,11 +137,11 @@ function ProjectList() {
       </Row>
       <Breadcrumb className="my-4 text-[#101011] cursor-pointer">
         <Breadcrumb.Item onClick={() => {
-          navigate("/dashboard");
+          navigate("/");
         }}
         >{t('PROJECT.DASHBOARD')}</Breadcrumb.Item>
         <Breadcrumb.Item onClick={() => {
-          navigate("");
+          navigate("/project");
         }}
         >{t('PROJECT.PROJECT')}</Breadcrumb.Item>
       </Breadcrumb>
