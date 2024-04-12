@@ -45,6 +45,15 @@
     pointer-events: auto;
 }
 
+.ant-layout-sider {
+    position: fixed; /* Fix the sider to the viewport (optional) */
+    left: 0; /* Position at left side */
+    top: 0; /* Position at top */
+    bottom: 0;
+    height: 100vh; /* Set height to 100% viewport height */
+    overflow: auto;
+}
+
 @media only screen and (max-width: 769px) {
     #sider_container {
         display: none;

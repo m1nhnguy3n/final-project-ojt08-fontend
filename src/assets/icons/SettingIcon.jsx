@@ -1,9 +1,10 @@
-const MessageIcon = () => {
+const SettingIcon = () => {
     return (
         <svg
             xmlns='http://www.w3.org/2000/svg'
             style={{
-                color: 'white',
+                color: 'red',
+                backgroundColor: 'inherit',
             }}
             width='24'
             height='24'
@@ -13,9 +14,10 @@ const MessageIcon = () => {
             strokeWidth='2'
             strokeLinecap='round'
             strokeLinejoin='round'>
-            <path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'></path>
+            <path d='M18.36 6.64a9 9 0 1 1-12.73 0'></path>
+            <line x1='12' y1='2' x2='12' y2='12'></line>
         </svg>
     );
 };
 
-export default MessageIcon;
+export default SettingIcon;

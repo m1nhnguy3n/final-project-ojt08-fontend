@@ -37,3 +37,5 @@ const slice = createSlice({
 
 // Reducer
 export default slice.reducer;
+
+export const { getProjectSuccess, getProjectsSuccess } = slice.actions;

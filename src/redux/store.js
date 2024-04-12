@@ -10,4 +10,5 @@ const store = configureStore({
 });
 
 const { dispatch } = store;
+
 export { dispatch, store };

@@ -1,25 +1,9 @@
 {
     "SIDE_BAR": {
         "DASHBOARD": "Dashboard",
-        "ANALYTIC": "Analytics",
-        "ORDERS": "Orders",
-        "PAGE": "Pages",
-        "PROFILE": "Profile",
-        "PRICING": "Pricing",
-        "LOG_OUT": "Log out",
-        "UX_DESIGNER": "UX Designer",
-        "SEARCH_CATEGORY": "Search category..."
-    },
-    "ORDER": {
-        "ORDER": "Orders",
-        "ORDER1": "New Order",
-        "ORDERID": "Order ID",
-        "PRODUCT": "Product",
-        "DATE": "Date",
-        "TOTAL": "Total",
-        "STATUS": "Status",
-        "PAYMENT_METHOD": "Payment Method",
-        "ACTIONS": "Actions"
+        "PROJECT": "Projects",
+        "EMPLOYEE": "Employees",
+        "LOG_OUT": "Log out"
     },
     "PRICING": {
         "H1_1": "Pricing",

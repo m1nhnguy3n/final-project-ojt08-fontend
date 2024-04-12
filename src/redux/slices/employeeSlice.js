@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
-
+import { getAllEmployeeApi } from '../../apis/employee';
+import { dispatch } from '../store';
 const initialState = {
     isLoading: false,
     error: null,
@@ -22,12 +23,12 @@ const slice = createSlice({
             state.error = action.payload;
         },
 
-        getProjectSuccess(state, action) {
+        getEmployeeSuccess(state, action) {
             state.isLoading = false;
             state.employee = action.payload;
         },
 
-        getProjectsSuccess(state, action) {
+        getEmployeesSuccess(state, action) {
             state.isLoading = false;
             state.employees = action.payload;
         },
@@ -36,3 +37,19 @@ const slice = createSlice({
 
 // Reducer
 export default slice.reducer;
+
+// Action
+
+export const { getEmployeeSuccess, getEmployeesSuccess } = slice.actions;
+
+export function getEmployees() {
+    return async () => {
+        dispatch(slice.actions.startLoading());
+        try {
+            const response = await getAllEmployeeApi();
+            dispatch(slice.actions.getEmployeesSuccess(response.data));
+        } catch (error) {
+            dispatch(slice.actions.hasError(error));
+        }
+    };
+}
