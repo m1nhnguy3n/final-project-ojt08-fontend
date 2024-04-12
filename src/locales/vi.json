@@ -22,9 +22,9 @@
         "PAGE": "Trang",
         "TOTAL": "Total: {{total}} project"
     },
-    "PROJECT":{
-        "LISTPROJECT" : "Danh sách dự án",
-        "CREATE" : "Tạo dự án",
+    "PROJECT": {
+        "LISTPROJECT": "Danh sách dự án",
+        "CREATE": "Tạo dự án",
         "DASHBOARD": "Bảng điều khiển",
         "PROJECT": "Dự án",
         "MANAGER": "Nhập tên quản lý",
@@ -33,20 +33,49 @@
         "SEARCH": "Tìm kiếm",
         "TOTAL": "Tổng số dự án"
     },
-  "SYSTEM": {
-    "LOGO_NAME": "EmpTrack"
-  },
-  "LOGIN": {
-    "TEXT": "Đăng nhập",
-    "PASSWORD": "Mật khẩu",
-    "PASSWORD_INPUT": "Nhập mật khẩu",
-    "EMAIL_INPUT": "Nhập email",
-    "EMAIL": "Email",
-    "USERNAME": "Tên đăng nhập",
-    "USERNAME_INPUT": "Nhập tên đăng nhập",
-    "WITH_GOOGLE": "Đăng nhập với google",
-    "WITH_EMAIL": "hoặc đăng nhập với email",
-    "ERROR": "Tài khoản không đúng",
-    "SUCCESS": "Đăng nhập thành công"
-  }
+    "SYSTEM": {
+        "LOGO_NAME": "EmpTrack"
+    },
+    "LOGIN": {
+        "TEXT": "Đăng nhập",
+        "PASSWORD": "Mật khẩu",
+        "PASSWORD_INPUT": "Nhập mật khẩu",
+        "EMAIL_INPUT": "Nhập email",
+        "EMAIL": "Email",
+        "USERNAME": "Tên đăng nhập",
+        "USERNAME_INPUT": "Nhập tên đăng nhập",
+        "WITH_GOOGLE": "Đăng nhập với google",
+        "WITH_EMAIL": "hoặc đăng nhập với email",
+        "ERROR": "Tài khoản không đúng",
+        "SUCCESS": "Đăng nhập thành công"
+    },
+    "PROJECTS": {
+        "PRODUCT": "Tên Sản Phẩm",
+        "PRODUCT1": "Nhập tên sản phẩm",
+        "DESCRIPTION": "Mô Tả Sản Phẩm",
+        "PRODUCT2": "Nhập mô tả sản phẩm",
+        "MANAGER": "Quản Lý Sản Phẩm",
+        "MANAGER1": "Chọn quản lý sản phẩm",
+        "SELECT1": "Quản lý 1",
+        "SELECT2": "Quản lý 2",
+        "SELECT3": "Quản lý 3",
+        "TIME": "Thời Gian Dự Án",
+        "TECHNICAL": "Kỹ Thuật Sản Phẩm",
+        "TECHNICAL1": "Chọn kỹ thuật sản phẩm",
+        "SELECT4": "Kỹ thuật 1",
+        "SELECT5": "Kỹ thuật 2",
+        "SELECT6": "Kỹ thuật 3",
+        "MEMBER": "Thành Viên Sản Phẩm",
+        "MEMBER1": "Chọn thành viên sản phẩm",
+        "SELECT7": "Thành viên 1",
+        "SELECT8": "Thành viên 2",
+        "SELECT9": "Thành viên 3",
+        "ROLE": "Vai Trò Sản Phẩm",
+        "ROLE1": "Chọn vai trò sản phẩm",
+        "CREATE": "Thêm thành viên",
+        "CREATEPROJECT": "Tạo Dự Án",
+        "SAVEPROJECT": "Lưu",
+        "PROJECT5": "Dự Án",
+        "CREATE1": "Tạo"
+    }
 }
