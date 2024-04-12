@@ -1,5 +1,6 @@
 import Dashboard from '../pages/Dashboard/Dashboard';
 import EmployList from '../pages/Employees/EmployeeList/EmployList';
+import UpdateEmployee from '../pages/Employees/UpdateEmployee/UpdateEmployee.jsx';
 import ProjectList from '../pages/Project/ProjectList/ProjectList';
 import ProtectedRoute from './ProtectedRoute/ProtectedRoute';
 
@@ -27,6 +28,10 @@ const PrivateRoute = [
                     {
                         path: '',
                         element: <EmployList />,
+                    },
+                    {
+                        path: 'update',
+                        element: <UpdateEmployee />,
                     },
                 ],
             },

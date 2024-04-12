@@ -3,7 +3,7 @@ import { auth, provider } from '../config/firebase';
 import { useLocalStorage } from './useLocalStorage';
 
 export const useAuth = () => {
-    const { setItem, removeItem } = useLocalStorage;
+    const { setItem, removeItem } = useLocalStorage();
 
     const loginWithGoogle = async () => {
         const userData = await signInWithPopup(auth, provider);
