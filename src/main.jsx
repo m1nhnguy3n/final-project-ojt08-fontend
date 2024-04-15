@@ -2,7 +2,7 @@ import { ConfigProvider } from 'antd';
 import ReactDOM from 'react-dom/client';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './config/i18n';
-import AuthProvider from './context/AuthContext.jsx';
+import AuthProvider from './provider/authProvider';
 import { Provider as ReduxProvider } from 'react-redux'
 import './index.css';
 import { store } from './redux/store.js';

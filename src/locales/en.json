@@ -32,6 +32,23 @@
         "PROJECTNAME" : "Enter Project Name",
         "STATUS" : "Enter Status",
         "SEARCH" : "Search"
-    }
+    },
 
+  "SYSTEM": {
+    "LOGO_NAME": "EmpTrack"
+  },
+  "LOGIN": {
+    "TEXT": "Login",
+    "PASSWORD": "Password",
+    "PASSWORD_INPUT": "Enter password",
+    "EMAIL_INPUT": "Enter email",
+    "EMAIL": "Email",
+    "USERNAME": "Username",
+    "USERNAME_INPUT": "Enter username",
+    "WITH_GOOGLE": "Login with google",
+    "WITH_EMAIL": "or login with email",
+    "ERROR": "Unauthorize",
+    "SUCCESS": "Login successfully"
+  }
+  
 }

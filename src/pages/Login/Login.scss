@@ -1,0 +1,68 @@
+
+#main-container {
+  background-color: white;
+  .ant-row.auth-sidebar.items-center.css-dev-only-do-not-override-14mkclz{
+margin: 0 !important;
+}
+  .auth-sidebar {
+    width: 100vw;
+    height: 100vh;
+    .auth-sidebar-content {
+      width: 100%;
+      .auth-sidebar-video {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+      }
+    }
+  }
+  .form-login {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: 500px) {
+      padding: 0 24px;
+    }
+    .form-content {
+      width: 100%;
+      max-width: 400px;
+      .title-login {
+        margin-bottom: 30px;
+        font: bold 24px/29px "Mona Sans", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+      }
+      .btn-login {
+        height: 56px;
+        border-radius: 30px;
+      }
+      .btn-submit {
+        width: 385px;
+        @media screen and (max-width: 1024px) {
+          width: 311px;
+        }
+        @media screen and (max-width: 768px) {
+          width: 225px;
+        }
+        @media screen and (max-width: 426px) {
+          width: 395px;
+        }
+        
+       
+      }
+      .ant-divider-inner-text {
+        font-size: 14px !important;
+        color: #6e6d7a;
+        font: normal 14px/14px "Mona Sans", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+      }
+      .ant-input-affix-wrapper {
+        height: 56px;
+        border-radius: 12px;
+        outline: none;
+        color: #0d0c22;
+        font-weight: 400;
+      }
+    }
+  }
+}

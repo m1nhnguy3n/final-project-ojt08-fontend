@@ -32,5 +32,21 @@
         "STATUS": "Nhập trạng thái",
         "SEARCH": "Tìm kiếm",
         "TOTAL": "Tổng số dự án"
-    }
+    },
+  "SYSTEM": {
+    "LOGO_NAME": "EmpTrack"
+  },
+  "LOGIN": {
+    "TEXT": "Đăng nhập",
+    "PASSWORD": "Mật khẩu",
+    "PASSWORD_INPUT": "Nhập mật khẩu",
+    "EMAIL_INPUT": "Nhập email",
+    "EMAIL": "Email",
+    "USERNAME": "Tên đăng nhập",
+    "USERNAME_INPUT": "Nhập tên đăng nhập",
+    "WITH_GOOGLE": "Đăng nhập với google",
+    "WITH_EMAIL": "hoặc đăng nhập với email",
+    "ERROR": "Tài khoản không đúng",
+    "SUCCESS": "Đăng nhập thành công"
+  }
 }
