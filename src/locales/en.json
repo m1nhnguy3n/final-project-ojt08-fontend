@@ -1,39 +1,37 @@
 {
-    "SIDE_BAR": {
-        "DASHBOARD": "Dashboard",
-        "PROJECT": "Projects",
-        "EMPLOYEE": "Employees",
-        "LOG_OUT": "Log out"
-    },
-    "TABLE": {
-        "ACTIONS": "Actions",
-        "DELETE": "Delete",
-        "VIEW" : "View",
-        "HISTORY" : "History",
-        "NO." : "No.",
-        "MANAGER" : "Manager",
-        "PROJECTS" : "Projects",
-        "STARTDAY" : "Start Day",
-        "ENDDAY" : "End Day",
-        "STATUS" : "Status",
-        "PENDING" : "Pending",
-        "INPROGRESS" : "In progress",
-        "COMPLETE" : "Complete",
-        "TOTAL": "Total: {{total}} project",
-        "PAGE": "Page"
-
-    },
-    "PROJECT":{
-        "LISTPROJECT" : "List Project",
-        "CREATE" : "Create Project",
-        "DASHBOARD" : "Dashboard",
-        "PROJECT" : "Project",
-        "MANAGER" : "Enter Manager",
-        "PROJECTNAME" : "Enter Project Name",
-        "STATUS" : "Enter Status",
-        "SEARCH" : "Search"
-    },
-
+  "SIDE_BAR": {
+    "DASHBOARD": "Dashboard",
+    "PROJECT": "Projects",
+    "EMPLOYEE": "Employees",
+    "LOG_OUT": "Log out"
+  },
+  "TABLE": {
+    "ACTIONS": "Actions",
+    "DELETE": "Delete",
+    "VIEW": "View",
+    "HISTORY": "History",
+    "NO.": "No.",
+    "MANAGER": "Manager",
+    "PROJECTS": "Projects",
+    "STARTDAY": "Start Day",
+    "ENDDAY": "End Day",
+    "STATUS": "Status",
+    "PENDING": "Pending",
+    "INPROGRESS": "In progress",
+    "COMPLETE": "Complete",
+    "TOTAL": "Total: {{total}} project",
+    "PAGE": "Page"
+  },
+  "PROJECT": {
+    "LISTPROJECT": "List Project",
+    "CREATE": "Create Project",
+    "DASHBOARD": "Dashboard",
+    "PROJECT": "Project",
+    "MANAGER": "Enter Manager",
+    "PROJECTNAME": "Enter Project Name",
+    "STATUS": "Enter Status",
+    "SEARCH": "Search"
+  },
   "SYSTEM": {
     "LOGO_NAME": "EmpTrack"
   },
@@ -49,6 +47,34 @@
     "WITH_EMAIL": "or login with email",
     "ERROR": "Unauthorize",
     "SUCCESS": "Login successfully"
+  },
+  "PROJECTS": {
+    "PRODUCT": "Product Name",
+    "PRODUCT1": "Enter product name",
+    "DESCRIPTION": "Product Description",
+    "PRODUCT2": "Enter product description",
+    "MANAGER": "Product Manager",
+    "MANAGER1": "Select product manager",
+    "SELECT1": "Manager 1",
+    "SELECT2": "Manager 2",
+    "SELECT3": "Manager 3",
+    "TIME": "Project Time",
+    "TECHNICAL": "Product Technical",
+    "TECHNICAL1": "Select product technical",
+    "SELECT4": "Technical 1",
+    "SELECT5": "Technical 2",
+    "SELECT6": "Technical 3",
+    "MEMBER": "Product Member",
+    "MEMBER1": "Select product members",
+    "SELECT7": "Member 1",
+    "SELECT8": "Member 2",
+    "SELECT9": "Member 3",
+    "ROLE": "Product Role",
+    "ROLE1": "Select product roles",
+    "CREATE": "Add member",
+    "CREATEPROJECT": "Create Project",
+    "SAVEPROJECT": "Save",
+    "PROJECT5": "Project",
+    "CREATE1": "Create"
   }
-  
 }

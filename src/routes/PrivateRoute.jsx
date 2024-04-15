@@ -3,6 +3,7 @@ import EmployList from '../pages/Employees/EmployeeList/EmployList';
 import UpdateEmployee from '../pages/Employees/UpdateEmployee/UpdateEmployee.jsx';
 import ProjectList from '../pages/Project/ProjectList/ProjectList';
 import ProtectedRoute from './ProtectedRoute/ProtectedRoute';
+import CreateProject from "../pages/Project/CreateProject/CreateProject.jsx";
 
 const PrivateRoute = [
     {
@@ -19,6 +20,10 @@ const PrivateRoute = [
                     {
                         path: '',
                         element: <ProjectList />,
+                    },
+                    {
+                        path: 'create',
+                        element: <CreateProject />,
                     },
                 ],
             },
