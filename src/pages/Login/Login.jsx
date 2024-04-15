@@ -15,13 +15,12 @@ import iconGoogle from "../../assets/img/google-icon.png";
 import Button from "../../components/atoms/Button/Button";
 import { Toast } from "../../components/toast/Toast";
 import { useAuth } from "../../hooks/useAuth";
-import { useLocalStorage } from "../../hooks/useLocalStorage";
 import "./Login.scss";
 
 const Login = () => {
   const { loginWithGoogle } = useAuth();
 
-  const { getItem } = useLocalStorage();
+ 
 
   const navigate = useNavigate();
   const { t } = useTranslation();
