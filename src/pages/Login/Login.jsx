@@ -10,18 +10,17 @@ import {
   notification,
 } from "antd";
 import { useTranslation } from "react-i18next";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import iconGoogle from "../../assets/img/google-icon.png";
 import Button from "../../components/atoms/Button/Button";
 import { Toast } from "../../components/toast/Toast";
 import { useAuth } from "../../hooks/useAuth";
-import { useLocalStorage } from "../../hooks/useLocalStorage";
 import "./Login.scss";
 
 const Login = () => {
   const { loginWithGoogle } = useAuth();
 
-  const { getItem } = useLocalStorage();
+ 
 
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -39,7 +38,7 @@ const Login = () => {
     await loginWithGoogle().then(() => {
       // if (data.user.email === import.meta.env.VITE_APP_EMAIL) {
       navigate("/");
-      Toast("success", t("TOAST.LOGIN_SUCCESS"));
+      Toast("success", t("LOGIN.SUCCESS"));
       // } else {
       //   return openNotificationWithIcon("error", `${t("LOGIN.ERROR")}`);
       // }
