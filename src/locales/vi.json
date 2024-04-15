@@ -1,14 +1,9 @@
 {
     "SIDE_BAR": {
         "DASHBOARD": "Bảng điều khiển",
-        "ANALYTIC": "Phân tích",
-        "ORDERS": "Đơn hàng",
-        "PAGE": "Trang",
-        "PROFILE": "Hồ sơ",
-        "PRICING": "Định giá",
-        "LOG_OUT": "Đăng xuất",
-        "UX_DESIGNER": "nhà thiết kế UX",
-        "SEARCH_CATEGORY": "Tìm kiếm danh mục..."
+        "PROJECT": "Dự án",
+        "EMPLOYEE": "Nhân viên",
+        "LOG_OUT": "Đăng xuất"
     },
     "TABLE": {
         "ACTIONS": "Hành động",
